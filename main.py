@@ -359,7 +359,7 @@ try:
     groq_input_key = None
     with st.form("groqform"):
         if not GROQ_API_KEY:
-            groq_input_key = st.text_input("Enter your Groq API Key (gsk_yA...):", "", type="password")
+            groq_input_key = st.text_input("Enter your Groq API Key (gsk_yA...):", "", type="password", autocomplete=None)
         
         # Add radio button to choose between file upload and YouTube link
         
